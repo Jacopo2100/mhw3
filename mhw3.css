@@ -1,0 +1,546 @@
+/* Stili di base */
+/*Header*/
+
+
+
+header{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+}
+
+
+div.logo{
+  font-size: 40px;
+  font-weight: bold;
+  background-color: orangered;
+  color: black;
+  padding: 5px 5px 5px 5px;
+  border-radius: 0;
+  font-family: Helvetica;
+  height: 70px;
+  margin-right: 20px;
+  cursor: pointer;
+} 
+
+.logo:hover{
+  color: white;
+}
+
+.menu div {
+ display: none;
+  width: 30px;
+  height: 5px;
+  background-color: white;
+  margin: -15px;
+  cursor: pointer;
+}
+
+.nav-bar ul{
+ display: flex;
+
+}
+
+.nav-bar ul li a{
+  display: block;
+  color:white;
+  font-size: 22px;
+  padding: 10px 25px;
+  border-radius: 50px;
+  transition: 0.2s;
+  text-decoration: none;
+  margin:5px 0 0 40px;
+}
+
+.nav-bar ul li a:hover{
+  color:orangered;
+  
+}
+
+
+
+#slideshow {
+  max-width: 100%;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative; 
+}
+.slide1{
+  background-image: url('https://www.moto.ch/wp-content/uploads/2022/10/2023-KTM-RC-8C-1.jpg');
+}
+
+.slide2{
+  background-image: url('https://www.repstatic.it/content/nazionale/img/2023/03/15/092015518-c2cf5a43-de79-4322-8155-47a65b84c92c.jpg');
+}
+
+.slide3{
+  background-image: url('https://outbackmotortek.it/wp-content/uploads/2023/07/IMG_9659-scaled.jpg');
+}
+
+
+
+
+
+
+
+
+/*Body*/
+
+
+#esposizione {
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+ flex-wrap: wrap;
+ margin-top: 50px;
+ 
+}
+
+.immagine{
+
+  position: relative;
+  height: auto;
+  overflow: hidden;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: calc(33.33% - 20px);
+  
+}
+
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transition: opacity 0.5s;
+  
+}
+
+.immagine:hover .overlay{
+  opacity: 0;
+  
+}
+
+.overlay h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: orangered;
+}
+
+.overlay p{
+ font-size: 20px;
+}
+
+
+h3{
+  text-align: center;
+  font-size: 30px;
+  color: orangered;
+
+}
+
+#mostraImmagineButton{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  color: black;
+  background-color: orangered;
+  cursor: pointer;
+
+}
+
+#album-view{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative ;
+}
+
+#modal-view {
+  position: fixed; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  z-index: 2; 
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 50px 150px rgba(0, 0, 0, 0.5);
+}
+
+#modal-view img {
+  max-width: 100%; 
+  max-height: 100%; 
+  display: block;
+  margin: 0 auto; 
+}
+
+
+
+.thumbnail{
+ margin:10px;
+ cursor: pointer;
+ width: 30%;
+ flex: calc(30% -20%);
+  
+}
+
+
+.hidden{
+  display: none;
+}
+
+
+
+.no-scroll{
+  overflow: hidden;
+}
+
+
+.gallery{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 50px;
+
+  
+}
+
+.cella {
+  flex: 1;
+  padding: 5px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+}
+
+.cella img {
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+}
+
+.cella p {
+  font-size: 18px;
+  text-align: center;
+
+}
+
+.cella h2 {
+  font-size: 24px;
+  text-align: center;
+
+  
+}
+
+
+#map{
+  width: 100%;
+  height: 500px;
+}
+h2{
+  color: black;
+  font-size: 30px;
+  text-align: center;
+}
+
+h4{
+  color: orangered;
+  font-size: 20px;
+  text-align: center;
+  
+}
+
+
+
+ 
+#videoyt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; 
+    
+}
+
+
+.yt-video img {
+  width: 1000px; 
+  height: auto; 
+  
+}
+
+
+/*footer*/
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+footer{
+line-height: 1.5;
+font-family: 'Poppins', sans-serif;
+
+}
+
+.footer{
+  background-color: black;
+  padding: 70px 0;
+  
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.recipiente{
+ padding-left: 100px;
+  max-width: 100%;
+  margin: auto;
+
+}
+
+.sotto{
+  display: flex;
+  flex-wrap: wrap;
+  
+
+}
+
+ul{
+ list-style: none;
+
+}
+
+.footer-stile{
+  width: 20%;
+  padding: 0 15px;
+  
+
+
+}
+
+.footer-stile h4{
+  font-size: 18px;
+  color: white;
+  text-transform: capitalize;
+  margin-bottom:  30px;
+  font-weight: 500;
+  position: relative;
+}
+
+.footer-stile ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: white;
+  text-decoration: none;
+  font-weight: 300;
+  display: block;
+
+}
+
+.footer-stile ul li a:hover{
+  color: orangered;
+  padding-left: 8px;
+
+}
+
+.footer-stile .social-link a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: white;
+  transition: all 0.5s ease;
+
+}
+
+.footer-stile .social-link a:hover{
+  color: orangered;
+}
+
+.barra_separatoria{
+ height: 3px;
+ background-color: white;
+ margin: 20px 0;
+}
+
+.torna_su{
+  display: none;
+  position: fixed; 
+  bottom: 10px;
+  right: 10px;
+  z-index: 99; 
+  font-size: 15px;
+  border: none;
+  outline: none;
+  color: orangered;
+  cursor: pointer;
+  padding: 15px;
+  font-weight: bold;
+ 
+}
+
+
+
+
+/*media quary*/
+
+
+
+@media only screen and (max-width: 700px) {
+
+  /* media header*/
+
+  header{
+   padding: 0 30px;
+
+  }
+  
+ 
+  /* Media esposizione */
+
+  #esposizione {
+    padding: 0 10px; 
+    justify-content: center; 
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .immagine {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+  }
+
+
+
+  /* Media didascalie */
+
+  .gallery {
+    padding-top: 50px; 
+    padding-bottom: 50px; 
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .cella {
+    flex: 1;
+    width: 90%; 
+    margin-bottom: 20px; 
+  }
+
+  .cella h2 {
+    font-size: 20px; 
+  }
+
+  .cella p {
+    font-size: 16px; 
+  }
+
+  /* media maps*/
+
+  #map{
+    width: 100%;
+    height: 200px;
+
+  }
+
+ /* media youtube*/
+
+ .yt-video img {
+  width: 100%; 
+  height: auto; 
+ }
+
+
+ /* Media footer */
+
+ .footer-stile{
+  width: 100%;
+  margin-bottom: 30px;
+  
+  }
+
+}
+
+/* menu a scomparsa*/
+
+@media only screen and (max-width: 690px) {
+  
+
+ .menu div {
+  display: block;
+  margin-top: 20px;
+  margin-left: -15px;
+  
+  
+  }
+  
+  
+  
+  .nav-bar{
+    
+    height: 0;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    background: black;
+    transition: 0.5s;
+    overflow: hidden;
+  }
+  
+  .nav-bar.active{
+    height: 550px;
+  }
+  
+  .nav-bar ul{
+    display: inline-block;
+    margin: 10px auto 0 auto;
+    transition: 0.5s;
+    opacity: 0;
+    padding: 0;
+  }
+  
+  .nav-bar.active ul{
+    opacity: 1;
+  }
+  
+  .nav-bar ul li{
+    margin-bottom: 10px;
+  
+  }
+  
+}
+  
